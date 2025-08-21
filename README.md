@@ -15,6 +15,19 @@ Automação de testes end-to-end com **Cypress** e **BDD**, baseada no curso da 
 
 Este repositório demonstra automação de testes E2E utilizando Cypress com abordagem BDD. O objetivo é validar funcionalidades de uma aplicação de atendimento ao cliente, promovendo boas práticas de qualidade de software.
 
+## Sobre o uso de BDD com comentários
+
+Neste projeto, o estilo BDD foi aplicado por meio de **comentários dentro dos testes** ao invés do uso da biblioteca **Cucumber**.  
+A decisão foi tomada com base nos seguintes pontos:
+
+- **Simplicidade**: o foco é a prática com Cypress, evitando a sobrecarga de configurar dependências adicionais como o `cypress-cucumber-preprocessor`.
+- **Didática**: os comentários deixam clara a estrutura **Given-When-Then** diretamente no código, facilitando a leitura e o entendimento de quem está aprendendo.
+- **Agilidade**: elimina camadas extras de arquivos `.feature` e step definitions, tornando os testes mais rápidos de escrever e manter em um contexto educacional.
+- **Complexidade reduzida**: o uso do Cucumber adicionaria uma camada extra de configuração e manutenção que não é necessária para o objetivo deste projeto.
+- **Clareza para stakeholders**: se o intuito do BDD é permitir que PO e outros stakeholders compreendam os cenários, os comentários já cumprem bem esse papel sem depender de uma sintaxe adicional.
+
+Ou seja: aqui a ideia não é substituir o Cucumber, mas mostrar como pensar em BDD desde o início, e que é possivel usar o Cypress puro.
+
 ## Pré-requisitos
 
 - [Git](https://git-scm.com/)
